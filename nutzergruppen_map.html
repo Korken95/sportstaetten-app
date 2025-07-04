@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce8e2811138b68c7ed14abdee2c774e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce8e2811138b68c7ed14abdee2c774e1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce8e2811138b68c7ed14abdee2c774e1 = L.map(
+                "map_ce8e2811138b68c7ed14abdee2c774e1",
+                {
+                    center: [51.9607, 7.6261],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30596cfc1d36cc4de3ed1e5b202726dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_30596cfc1d36cc4de3ed1e5b202726dc.addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+            var circle_marker_0c4823c697038418574b60fba7cf2b3d = L.circleMarker(
+                [51.9412819, 7.6032241],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_e573f7db74bcb1eb9d6e2ca0d21e77d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8481b8ca6e74efd30cd269ae9f311e46 = $(`<div id="html_8481b8ca6e74efd30cd269ae9f311e46" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportverein Blau-Weiß Aasee e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_e573f7db74bcb1eb9d6e2ca0d21e77d3.setContent(html_8481b8ca6e74efd30cd269ae9f311e46);
+            
+        
+
+        circle_marker_0c4823c697038418574b60fba7cf2b3d.bindPopup(popup_e573f7db74bcb1eb9d6e2ca0d21e77d3)
+        ;
+
+        
+    
+    
+            var circle_marker_944624dcd2053ff67057ad6bcc468c21 = L.circleMarker(
+                [51.9412819, 7.6032241],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f5f8c204615e3b745c861f06c5b5141f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29ed46fa32f49a5baf2153ebf0063a1b = $(`<div id="html_29ed46fa32f49a5baf2153ebf0063a1b" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportverein Blau-Weiß Aasee e.V.<br>         <i>Ju Jutsu</i>         </div>`)[0];
+                popup_f5f8c204615e3b745c861f06c5b5141f.setContent(html_29ed46fa32f49a5baf2153ebf0063a1b);
+            
+        
+
+        circle_marker_944624dcd2053ff67057ad6bcc468c21.bindPopup(popup_f5f8c204615e3b745c861f06c5b5141f)
+        ;
+
+        
+    
+    
+            var circle_marker_48a9dfc7f42e250a727177ad23200ab1 = L.circleMarker(
+                [51.9659451, 7.6320056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_6700dec3fefc1d0826eea995fc18f156 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_966324bf048a1d17c1494d378f65163e = $(`<div id="html_966324bf048a1d17c1494d378f65163e" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turngemeinde Münster e. V.<br>         <i>Trampolinturnen</i>         </div>`)[0];
+                popup_6700dec3fefc1d0826eea995fc18f156.setContent(html_966324bf048a1d17c1494d378f65163e);
+            
+        
+
+        circle_marker_48a9dfc7f42e250a727177ad23200ab1.bindPopup(popup_6700dec3fefc1d0826eea995fc18f156)
+        ;
+
+        
+    
+    
+            var circle_marker_09401e2a6256f6112c6af2d1a92c3165 = L.circleMarker(
+                [51.9659451, 7.6320056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_76f0379cd08a8f1607b13cd9e97d3d4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4b6f3c295325ea4bad8c48f547e959b = $(`<div id="html_e4b6f3c295325ea4bad8c48f547e959b" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Turngemeinde Münster e. V.<br>         <i>Taekwon-Do</i>         </div>`)[0];
+                popup_76f0379cd08a8f1607b13cd9e97d3d4d.setContent(html_e4b6f3c295325ea4bad8c48f547e959b);
+            
+        
+
+        circle_marker_09401e2a6256f6112c6af2d1a92c3165.bindPopup(popup_76f0379cd08a8f1607b13cd9e97d3d4d)
+        ;
+
+        
+    
+    
+            var circle_marker_158ea6cd31a6f97f4bd57bd0ed9ff8e8 = L.circleMarker(
+                [51.9659451, 7.6320056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f0d401327cee182df54a0e8c9daf9a8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2030e17fb5369c9cf0f412af71bdf0b4 = $(`<div id="html_2030e17fb5369c9cf0f412af71bdf0b4" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turngemeinde Münster e. V.<br>         <i>Rhythmische Sportgym.</i>         </div>`)[0];
+                popup_f0d401327cee182df54a0e8c9daf9a8e.setContent(html_2030e17fb5369c9cf0f412af71bdf0b4);
+            
+        
+
+        circle_marker_158ea6cd31a6f97f4bd57bd0ed9ff8e8.bindPopup(popup_f0d401327cee182df54a0e8c9daf9a8e)
+        ;
+
+        
+    
+    
+            var circle_marker_bf62b4a2dcf62315f32288c07be95ace = L.circleMarker(
+                [51.9590769, 7.6237296],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_21b3c1173ca28399a2704771569e628f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_471e42b036db8c367318e3865fc89171 = $(`<div id="html_471e42b036db8c367318e3865fc89171" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Caloreira - Kunst, Kultur, Capoeira e.V.<br>         <i>Capoeira</i>         </div>`)[0];
+                popup_21b3c1173ca28399a2704771569e628f.setContent(html_471e42b036db8c367318e3865fc89171);
+            
+        
+
+        circle_marker_bf62b4a2dcf62315f32288c07be95ace.bindPopup(popup_21b3c1173ca28399a2704771569e628f)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0aa10cea0195075798410dede19bb2 = L.circleMarker(
+                [51.9564321, 7.6537947],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_9a005a5f4444a678f8b251d94063507b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9f6af7cc2f306c4d14c71d310aca27b = $(`<div id="html_e9f6af7cc2f306c4d14c71d310aca27b" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         ImpulsWerk Münster e.V.<br>         <i>Kinderturnen</i>         </div>`)[0];
+                popup_9a005a5f4444a678f8b251d94063507b.setContent(html_e9f6af7cc2f306c4d14c71d310aca27b);
+            
+        
+
+        circle_marker_7d0aa10cea0195075798410dede19bb2.bindPopup(popup_9a005a5f4444a678f8b251d94063507b)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef7727ad92b7b989fd45acbc8d53379 = L.circleMarker(
+                [51.9213159, 7.6807536],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_6447098e72d4096968fe4d796e9334b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af4fc588b5df97b514257d01278d5ec1 = $(`<div id="html_af4fc588b5df97b514257d01278d5ec1" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Turngemeinde Münster e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_6447098e72d4096968fe4d796e9334b1.setContent(html_af4fc588b5df97b514257d01278d5ec1);
+            
+        
+
+        circle_marker_4ef7727ad92b7b989fd45acbc8d53379.bindPopup(popup_6447098e72d4096968fe4d796e9334b1)
+        ;
+
+        
+    
+    
+            var circle_marker_2dcac41749796215ce7595b10b1605c6 = L.circleMarker(
+                [51.957927, 7.6243007],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_9c45f2297c12143c4d7648a08d84174a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4eb7419efe90c5ae01019225a5ac2414 = $(`<div id="html_4eb7419efe90c5ae01019225a5ac2414" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Betriebssportverband Münster e.V.<br>         <i>Badminton</i>         </div>`)[0];
+                popup_9c45f2297c12143c4d7648a08d84174a.setContent(html_4eb7419efe90c5ae01019225a5ac2414);
+            
+        
+
+        circle_marker_2dcac41749796215ce7595b10b1605c6.bindPopup(popup_9c45f2297c12143c4d7648a08d84174a)
+        ;
+
+        
+    
+    
+            var circle_marker_9d6b460b8fd949a38c066737de772715 = L.circleMarker(
+                [51.9213159, 7.6807536],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_a78b121aff70a3702024ccbf3c524761 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24a3e8af7dd644cb00f56721d1cb4801 = $(`<div id="html_24a3e8af7dd644cb00f56721d1cb4801" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         TSV Angelmodde e.V.<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_a78b121aff70a3702024ccbf3c524761.setContent(html_24a3e8af7dd644cb00f56721d1cb4801);
+            
+        
+
+        circle_marker_9d6b460b8fd949a38c066737de772715.bindPopup(popup_a78b121aff70a3702024ccbf3c524761)
+        ;
+
+        
+    
+    
+            var circle_marker_f535fc38d9acd80771436bdb66ef8b12 = L.circleMarker(
+                [52.0297395, 7.675133],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_abbeb92cdd18a73267907e87fa6e0615 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b812e38dfbb6a250643af594b9f768f3 = $(`<div id="html_b812e38dfbb6a250643af594b9f768f3" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         DJK Grün-Weiß Gelmer 1950 e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_abbeb92cdd18a73267907e87fa6e0615.setContent(html_b812e38dfbb6a250643af594b9f768f3);
+            
+        
+
+        circle_marker_f535fc38d9acd80771436bdb66ef8b12.bindPopup(popup_abbeb92cdd18a73267907e87fa6e0615)
+        ;
+
+        
+    
+    
+            var circle_marker_4a6c6014aee46e053883a9223a404fa1 = L.circleMarker(
+                [51.9600626, 7.6452077],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_867a5c06ea2fe66c34be5be10d503a66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1d942b0a41ae3dea3ca307ae095697d = $(`<div id="html_e1d942b0a41ae3dea3ca307ae095697d" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Betriebssportverband Münster e.V.<br>         <i>Basketball</i>         </div>`)[0];
+                popup_867a5c06ea2fe66c34be5be10d503a66.setContent(html_e1d942b0a41ae3dea3ca307ae095697d);
+            
+        
+
+        circle_marker_4a6c6014aee46e053883a9223a404fa1.bindPopup(popup_867a5c06ea2fe66c34be5be10d503a66)
+        ;
+
+        
+    
+    
+            var circle_marker_f2bba33ad427d41fdaac8437db31c74a = L.circleMarker(
+                [51.8848741, 7.6054943],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_3c231a308e390681d4926baef53a9394 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f171caeff930228e46d92ed359f8013 = $(`<div id="html_2f171caeff930228e46d92ed359f8013" style="width: 100.0%; height: 100.0%;">         <b>Gesundheitssport</b><br>         DJK Grün-Weiß Amelsbüren e. V.<br>         <i>Wirbelsäulengymnastik</i>         </div>`)[0];
+                popup_3c231a308e390681d4926baef53a9394.setContent(html_2f171caeff930228e46d92ed359f8013);
+            
+        
+
+        circle_marker_f2bba33ad427d41fdaac8437db31c74a.bindPopup(popup_3c231a308e390681d4926baef53a9394)
+        ;
+
+        
+    
+    
+            var circle_marker_45ee3e962409c3ade1852ad732c52404 = L.circleMarker(
+                [51.8848741, 7.6054943],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_68cdb620b5be8b4d9df2fb606d62b36d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ed33c3945f1781f50306d64bc98ba8d = $(`<div id="html_9ed33c3945f1781f50306d64bc98ba8d" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK Grün-Weiß Amelsbüren e. V.<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_68cdb620b5be8b4d9df2fb606d62b36d.setContent(html_9ed33c3945f1781f50306d64bc98ba8d);
+            
+        
+
+        circle_marker_45ee3e962409c3ade1852ad732c52404.bindPopup(popup_68cdb620b5be8b4d9df2fb606d62b36d)
+        ;
+
+        
+    
+    
+            var circle_marker_3c5c669e96f76ff24ca1b6f3ad80e5a9 = L.circleMarker(
+                [51.975366, 7.6155095],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_efcb2426262ae3a6963c2dbf1c14fd8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b7ca0009830cbea68782d3d70d01919 = $(`<div id="html_6b7ca0009830cbea68782d3d70d01919" style="width: 100.0%; height: 100.0%;">         <b>Gesundheitssport</b><br>         Verein f. Gesundheitssport u.Sporttherapie e.V.<br>         <i>Koronarsport</i>         </div>`)[0];
+                popup_efcb2426262ae3a6963c2dbf1c14fd8c.setContent(html_6b7ca0009830cbea68782d3d70d01919);
+            
+        
+
+        circle_marker_3c5c669e96f76ff24ca1b6f3ad80e5a9.bindPopup(popup_efcb2426262ae3a6963c2dbf1c14fd8c)
+        ;
+
+        
+    
+    
+            var circle_marker_a6f1587b033df157805f5c649096a7ba = L.circleMarker(
+                [51.9931795, 7.6779959],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_6791d8500adf927f5bc4b52765b01ff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa90783aececc90bf82376f8a809c241 = $(`<div id="html_aa90783aececc90bf82376f8a809c241" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_6791d8500adf927f5bc4b52765b01ff9.setContent(html_aa90783aececc90bf82376f8a809c241);
+            
+        
+
+        circle_marker_a6f1587b033df157805f5c649096a7ba.bindPopup(popup_6791d8500adf927f5bc4b52765b01ff9)
+        ;
+
+        
+    
+    
+            var circle_marker_34d8f9204cd0d0c2c3c04db517e58529 = L.circleMarker(
+                [51.9931795, 7.6779959],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_159a29f981ec6f46580d6d361a63db15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c13797f01fea52319b22c97ee6eb6e5 = $(`<div id="html_6c13797f01fea52319b22c97ee6eb6e5" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportgemeinschaft DJK Dyckburg e.V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_159a29f981ec6f46580d6d361a63db15.setContent(html_6c13797f01fea52319b22c97ee6eb6e5);
+            
+        
+
+        circle_marker_34d8f9204cd0d0c2c3c04db517e58529.bindPopup(popup_159a29f981ec6f46580d6d361a63db15)
+        ;
+
+        
+    
+    
+            var circle_marker_179480fbd0c0254ace0c1995144b3572 = L.circleMarker(
+                [51.9213159, 7.6807536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_803b0d1a98483e9f8fdcd36280489f21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d2d43fa8e431035fb44b35fe3d0f6dc = $(`<div id="html_4d2d43fa8e431035fb44b35fe3d0f6dc" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Diakonie Münster Kinder-, Jugend und Familiendienste<br>         <i>Ballspiele</i>         </div>`)[0];
+                popup_803b0d1a98483e9f8fdcd36280489f21.setContent(html_4d2d43fa8e431035fb44b35fe3d0f6dc);
+            
+        
+
+        circle_marker_179480fbd0c0254ace0c1995144b3572.bindPopup(popup_803b0d1a98483e9f8fdcd36280489f21)
+        ;
+
+        
+    
+    
+            var circle_marker_1ba10f9d1a24b70a84f5254b3219121b = L.circleMarker(
+                [51.972652, 7.6538421],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_40745a0eb495c9f91b050a3e896a38bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c54a3daa06e85be5ae38b8f4e0b00c50 = $(`<div id="html_c54a3daa06e85be5ae38b8f4e0b00c50" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Universität Münster ZBE Hochschulsport<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_40745a0eb495c9f91b050a3e896a38bd.setContent(html_c54a3daa06e85be5ae38b8f4e0b00c50);
+            
+        
+
+        circle_marker_1ba10f9d1a24b70a84f5254b3219121b.bindPopup(popup_40745a0eb495c9f91b050a3e896a38bd)
+        ;
+
+        
+    
+    
+            var circle_marker_72daa403383affb9fca03388b0bc8335 = L.circleMarker(
+                [51.9519746, 7.6093998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_8ed3c94337c713f72b79285d20a43aac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f9b4a19cbbb42a742af408e82d00251 = $(`<div id="html_6f9b4a19cbbb42a742af408e82d00251" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Betriebssportverband Münster e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_8ed3c94337c713f72b79285d20a43aac.setContent(html_6f9b4a19cbbb42a742af408e82d00251);
+            
+        
+
+        circle_marker_72daa403383affb9fca03388b0bc8335.bindPopup(popup_8ed3c94337c713f72b79285d20a43aac)
+        ;
+
+        
+    
+    
+            var circle_marker_66f21513ef0daebed84cce0a74aa0393 = L.circleMarker(
+                [51.9351064, 7.6240685],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_63f5b0497f7a2f4073b9852bb9dcd2f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4d5370a0a9368ea260454c578c75bf7 = $(`<div id="html_e4d5370a0a9368ea260454c578c75bf7" style="width: 100.0%; height: 100.0%;">         <b>Gesundheitssport</b><br>         Sport-u. Naturfreunde MS e.V.<br>         <i>Wirbelsäulengymnastik</i>         </div>`)[0];
+                popup_63f5b0497f7a2f4073b9852bb9dcd2f3.setContent(html_e4d5370a0a9368ea260454c578c75bf7);
+            
+        
+
+        circle_marker_66f21513ef0daebed84cce0a74aa0393.bindPopup(popup_63f5b0497f7a2f4073b9852bb9dcd2f3)
+        ;
+
+        
+    
+    
+            var circle_marker_67b68b178391c42c145bd34d068ae166 = L.circleMarker(
+                [51.9351064, 7.6240685],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_a9c7fc7ba74cc5d7cc213c6def5776e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec97f443dc299963a655b4ccedb6027e = $(`<div id="html_ec97f443dc299963a655b4ccedb6027e" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_a9c7fc7ba74cc5d7cc213c6def5776e3.setContent(html_ec97f443dc299963a655b4ccedb6027e);
+            
+        
+
+        circle_marker_67b68b178391c42c145bd34d068ae166.bindPopup(popup_a9c7fc7ba74cc5d7cc213c6def5776e3)
+        ;
+
+        
+    
+    
+            var circle_marker_dbcebee25337a0b0cb0c5e9af30b7520 = L.circleMarker(
+                [51.9727938, 7.5658591],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_e72396089f5a0d4a38eb3463f7a48cf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bcd5e9c21655acf395b1c8bc53ac74d = $(`<div id="html_7bcd5e9c21655acf395b1c8bc53ac74d" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         TSC Münster-Gievenbeck e.V.<br>         <i>Hip-Hop</i>         </div>`)[0];
+                popup_e72396089f5a0d4a38eb3463f7a48cf6.setContent(html_7bcd5e9c21655acf395b1c8bc53ac74d);
+            
+        
+
+        circle_marker_dbcebee25337a0b0cb0c5e9af30b7520.bindPopup(popup_e72396089f5a0d4a38eb3463f7a48cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_b61617cf4ca89475ce77a134726e91da = L.circleMarker(
+                [51.964094, 7.6197645],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_047b9aeb08d604181d9f54fe4cff2438 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fcb14a3a3fb39a957965cb9bbbe37b3 = $(`<div id="html_0fcb14a3a3fb39a957965cb9bbbe37b3" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Universität Münster ZBE Hochschulsport<br>         <i>Fechten</i>         </div>`)[0];
+                popup_047b9aeb08d604181d9f54fe4cff2438.setContent(html_0fcb14a3a3fb39a957965cb9bbbe37b3);
+            
+        
+
+        circle_marker_b61617cf4ca89475ce77a134726e91da.bindPopup(popup_047b9aeb08d604181d9f54fe4cff2438)
+        ;
+
+        
+    
+    
+            var circle_marker_edfd3629f18207a79143e608fb929223 = L.circleMarker(
+                [51.9331045, 7.6123162],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_6d7df78d3bb2a88094cebf67f6f7b62f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_859abebf4fa93f7fbe6d6dd102f7c6b3 = $(`<div id="html_859abebf4fa93f7fbe6d6dd102f7c6b3" style="width: 100.0%; height: 100.0%;">         <b>Gesundheitssport</b><br>         Sportverein Blau-Weiß Aasee e.V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_6d7df78d3bb2a88094cebf67f6f7b62f.setContent(html_859abebf4fa93f7fbe6d6dd102f7c6b3);
+            
+        
+
+        circle_marker_edfd3629f18207a79143e608fb929223.bindPopup(popup_6d7df78d3bb2a88094cebf67f6f7b62f)
+        ;
+
+        
+    
+    
+            var circle_marker_0b8acedcc93260440717350e81159031 = L.circleMarker(
+                [51.9593276, 7.6178428],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_93c8614ae45bbc094039f5757b77ef55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ec4e5e1579db0c4385837a2f33e4c9d = $(`<div id="html_8ec4e5e1579db0c4385837a2f33e4c9d" style="width: 100.0%; height: 100.0%;">         <b>Lehrerarbeitsgemein</b><br>         Gymnasium Paulinum (304)<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_93c8614ae45bbc094039f5757b77ef55.setContent(html_8ec4e5e1579db0c4385837a2f33e4c9d);
+            
+        
+
+        circle_marker_0b8acedcc93260440717350e81159031.bindPopup(popup_93c8614ae45bbc094039f5757b77ef55)
+        ;
+
+        
+    
+    
+            var circle_marker_2f1800eda1dfe1264517287d4c438b54 = L.circleMarker(
+                [51.9564382, 7.6555841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_8001cd6ca291389bd3113bfb4a645b7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7998aec49b8a6aa33873a947ac94a1a8 = $(`<div id="html_7998aec49b8a6aa33873a947ac94a1a8" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Münster 08 e.V.<br>         <i>Krafttraining</i>         </div>`)[0];
+                popup_8001cd6ca291389bd3113bfb4a645b7e.setContent(html_7998aec49b8a6aa33873a947ac94a1a8);
+            
+        
+
+        circle_marker_2f1800eda1dfe1264517287d4c438b54.bindPopup(popup_8001cd6ca291389bd3113bfb4a645b7e)
+        ;
+
+        
+    
+    
+            var circle_marker_f3b1ddcc2a26dff782e4515bbe6c8fc5 = L.circleMarker(
+                [51.9564382, 7.6555841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f3a959c3721a64f3550b6dcccfda9e73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a23a367283b48b82e3827d0a7be5c57 = $(`<div id="html_4a23a367283b48b82e3827d0a7be5c57" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sparta Münster e. V.<br>         <i>Handball</i>         </div>`)[0];
+                popup_f3a959c3721a64f3550b6dcccfda9e73.setContent(html_4a23a367283b48b82e3827d0a7be5c57);
+            
+        
+
+        circle_marker_f3b1ddcc2a26dff782e4515bbe6c8fc5.bindPopup(popup_f3a959c3721a64f3550b6dcccfda9e73)
+        ;
+
+        
+    
+    
+            var circle_marker_c67eea6e298c39ebfa997f64fd110822 = L.circleMarker(
+                [51.9547017, 7.6455399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_5b5cba996c1ee17c701482f809cc926a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be0493681a098e5abb377c53fec0a38 = $(`<div id="html_5be0493681a098e5abb377c53fec0a38" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         1. TTC Münster e.V.<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_5b5cba996c1ee17c701482f809cc926a.setContent(html_5be0493681a098e5abb377c53fec0a38);
+            
+        
+
+        circle_marker_c67eea6e298c39ebfa997f64fd110822.bindPopup(popup_5b5cba996c1ee17c701482f809cc926a)
+        ;
+
+        
+    
+    
+            var circle_marker_6719080cca3a0161d985eff614baa6fd = L.circleMarker(
+                [51.9547017, 7.6455399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_4dacac3d36430a0952fa3bf3d9aaeaa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55395cc8c31a77a94a950fcb23ad1d2d = $(`<div id="html_55395cc8c31a77a94a950fcb23ad1d2d" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         TuS Saxonia Münster e.V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_4dacac3d36430a0952fa3bf3d9aaeaa8.setContent(html_55395cc8c31a77a94a950fcb23ad1d2d);
+            
+        
+
+        circle_marker_6719080cca3a0161d985eff614baa6fd.bindPopup(popup_4dacac3d36430a0952fa3bf3d9aaeaa8)
+        ;
+
+        
+    
+    
+            var circle_marker_0b15dee9e4ee4ec234842f4af951a878 = L.circleMarker(
+                [51.9968806, 7.6478354],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_ab9a4888e7118d49ca56a53252964e61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_977a30e930ecd08be487d78ffff6a840 = $(`<div id="html_977a30e930ecd08be487d78ffff6a840" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_ab9a4888e7118d49ca56a53252964e61.setContent(html_977a30e930ecd08be487d78ffff6a840);
+            
+        
+
+        circle_marker_0b15dee9e4ee4ec234842f4af951a878.bindPopup(popup_ab9a4888e7118d49ca56a53252964e61)
+        ;
+
+        
+    
+    
+            var circle_marker_31d920b264c72d2a16c69ae61f2ab134 = L.circleMarker(
+                [51.9968806, 7.6478354],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_ea9ab91e0f90bdd13ba49b4ad0f3447b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f07725d2c3c97e61a5ddd75c4375e396 = $(`<div id="html_f07725d2c3c97e61a5ddd75c4375e396" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK SV Mauritz 1906 e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_ea9ab91e0f90bdd13ba49b4ad0f3447b.setContent(html_f07725d2c3c97e61a5ddd75c4375e396);
+            
+        
+
+        circle_marker_31d920b264c72d2a16c69ae61f2ab134.bindPopup(popup_ea9ab91e0f90bdd13ba49b4ad0f3447b)
+        ;
+
+        
+    
+    
+            var circle_marker_1a3049334a142534ba4393a08cc080c7 = L.circleMarker(
+                [51.9449041, 7.6263712],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_4254e31d605b4076fe7af15a5e3d51e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53b924a5b68b0ea593f3dfd500efa34b = $(`<div id="html_53b924a5b68b0ea593f3dfd500efa34b" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         BSG Stadtverwaltung (Betriebssportverband Münster e.V.)<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_4254e31d605b4076fe7af15a5e3d51e7.setContent(html_53b924a5b68b0ea593f3dfd500efa34b);
+            
+        
+
+        circle_marker_1a3049334a142534ba4393a08cc080c7.bindPopup(popup_4254e31d605b4076fe7af15a5e3d51e7)
+        ;
+
+        
+    
+    
+            var circle_marker_4004c1307bc9382bad636309555e2bf9 = L.circleMarker(
+                [51.9065353, 7.6465948],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_21b38baefdd0a7833b8dcae17f68d3f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9520d7ce32b9edade2d529a3a13fd643 = $(`<div id="html_9520d7ce32b9edade2d529a3a13fd643" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Tus Hiltrup<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_21b38baefdd0a7833b8dcae17f68d3f5.setContent(html_9520d7ce32b9edade2d529a3a13fd643);
+            
+        
+
+        circle_marker_4004c1307bc9382bad636309555e2bf9.bindPopup(popup_21b38baefdd0a7833b8dcae17f68d3f5)
+        ;
+
+        
+    
+    
+            var circle_marker_eaeed65b92eae5f1307271ffa5428235 = L.circleMarker(
+                [51.9065353, 7.6465948],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_4c54d87bcf94f2132ded46e551faaecd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77fca06a28520e2c6cdbd431d175a713 = $(`<div id="html_77fca06a28520e2c6cdbd431d175a713" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Tus Hiltrup<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_4c54d87bcf94f2132ded46e551faaecd.setContent(html_77fca06a28520e2c6cdbd431d175a713);
+            
+        
+
+        circle_marker_eaeed65b92eae5f1307271ffa5428235.bindPopup(popup_4c54d87bcf94f2132ded46e551faaecd)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea534c8e21d4c1578a3d4d515314338 = L.circleMarker(
+                [51.9323056, 7.6738661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f7bf97f422a326206148af54a9d67a2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2120e942109b5aac0b55d7ded8ea78b7 = $(`<div id="html_2120e942109b5aac0b55d7ded8ea78b7" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Gremmendorf 1946 e.V.<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_f7bf97f422a326206148af54a9d67a2a.setContent(html_2120e942109b5aac0b55d7ded8ea78b7);
+            
+        
+
+        circle_marker_0ea534c8e21d4c1578a3d4d515314338.bindPopup(popup_f7bf97f422a326206148af54a9d67a2a)
+        ;
+
+        
+    
+    
+            var circle_marker_30c7c2afefc8b53cd058786d7ab21ad3 = L.circleMarker(
+                [51.9008006, 7.6414984],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_eb78ce8b80906cf983d9b4f94a8b0d5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f283e1691e843d1b4370b59dc6dfdbd2 = $(`<div id="html_f283e1691e843d1b4370b59dc6dfdbd2" style="width: 100.0%; height: 100.0%;">         <b>Schulsport</b><br>         Immanuel-Kant-Gymnasium (306)<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_eb78ce8b80906cf983d9b4f94a8b0d5d.setContent(html_f283e1691e843d1b4370b59dc6dfdbd2);
+            
+        
+
+        circle_marker_30c7c2afefc8b53cd058786d7ab21ad3.bindPopup(popup_eb78ce8b80906cf983d9b4f94a8b0d5d)
+        ;
+
+        
+    
+    
+            var circle_marker_e3aaf94ce7560c541538704e17eede98 = L.circleMarker(
+                [51.9630779, 7.6335808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_0394490f73c0f14532103ce9ed74ec0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6191209c97d3672a390e62d6da9505f9 = $(`<div id="html_6191209c97d3672a390e62d6da9505f9" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         SportBildungswerk des LSB NW-Außenstelle SSB Münster-<br>         <i>Pilates</i>         </div>`)[0];
+                popup_0394490f73c0f14532103ce9ed74ec0b.setContent(html_6191209c97d3672a390e62d6da9505f9);
+            
+        
+
+        circle_marker_e3aaf94ce7560c541538704e17eede98.bindPopup(popup_0394490f73c0f14532103ce9ed74ec0b)
+        ;
+
+        
+    
+    
+            var circle_marker_2aecde33d3f27ce12009d4561bdc82ad = L.circleMarker(
+                [51.9630779, 7.6335808],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_b248d6ee58f9c4ec139ab940db7140a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e0cd1309d5d3985c69f46bf7d4c495d = $(`<div id="html_2e0cd1309d5d3985c69f46bf7d4c495d" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Preußen 06 e. V.  Münster<br>         <i>Leichtathletik</i>         </div>`)[0];
+                popup_b248d6ee58f9c4ec139ab940db7140a2.setContent(html_2e0cd1309d5d3985c69f46bf7d4c495d);
+            
+        
+
+        circle_marker_2aecde33d3f27ce12009d4561bdc82ad.bindPopup(popup_b248d6ee58f9c4ec139ab940db7140a2)
+        ;
+
+        
+    
+    
+            var circle_marker_c6e9c10eabc756b49d3acec63f317585 = L.circleMarker(
+                [51.9525058, 7.6222154],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d4dbb36766350c03de0c29394d651e5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c56642bb3f397d2ef0336ad5b574f68 = $(`<div id="html_7c56642bb3f397d2ef0336ad5b574f68" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_d4dbb36766350c03de0c29394d651e5f.setContent(html_7c56642bb3f397d2ef0336ad5b574f68);
+            
+        
+
+        circle_marker_c6e9c10eabc756b49d3acec63f317585.bindPopup(popup_d4dbb36766350c03de0c29394d651e5f)
+        ;
+
+        
+    
+    
+            var circle_marker_16c758aa72e7f34d6e64cfd2b4cbf4a0 = L.circleMarker(
+                [51.9525058, 7.6222154],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d93d1ac5546ff7be392404e6f62ed72e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ff35c8d1e9e85f29d8655c74fec221a = $(`<div id="html_1ff35c8d1e9e85f29d8655c74fec221a" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Intern. Kultur-Sport-Verein e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_d93d1ac5546ff7be392404e6f62ed72e.setContent(html_1ff35c8d1e9e85f29d8655c74fec221a);
+            
+        
+
+        circle_marker_16c758aa72e7f34d6e64cfd2b4cbf4a0.bindPopup(popup_d93d1ac5546ff7be392404e6f62ed72e)
+        ;
+
+        
+    
+    
+            var circle_marker_f0ecdc9e8f6a66d3db5ad76e49a3df92 = L.circleMarker(
+                [51.9511643, 7.6242645],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_fc927e5c77cab132f4c81add42338c50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b11bafd1e8740113428f7b4a945ac05 = $(`<div id="html_3b11bafd1e8740113428f7b4a945ac05" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Polizeisportverein Münster e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_fc927e5c77cab132f4c81add42338c50.setContent(html_3b11bafd1e8740113428f7b4a945ac05);
+            
+        
+
+        circle_marker_f0ecdc9e8f6a66d3db5ad76e49a3df92.bindPopup(popup_fc927e5c77cab132f4c81add42338c50)
+        ;
+
+        
+    
+    
+            var circle_marker_a2b7159604d79cd012c546ab172a38f1 = L.circleMarker(
+                [51.992576, 7.6162984],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d5e1bdcc7a030c6a819f16ca4cfc3569 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_093bf22466e911da2704f605b20cfc2c = $(`<div id="html_093bf22466e911da2704f605b20cfc2c" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Westfalia Kinderhaus e.V.<br>         <i>Handball</i>         </div>`)[0];
+                popup_d5e1bdcc7a030c6a819f16ca4cfc3569.setContent(html_093bf22466e911da2704f605b20cfc2c);
+            
+        
+
+        circle_marker_a2b7159604d79cd012c546ab172a38f1.bindPopup(popup_d5e1bdcc7a030c6a819f16ca4cfc3569)
+        ;
+
+        
+    
+    
+            var circle_marker_40c48c629637e574d95370ae0a1596e3 = L.circleMarker(
+                [51.9689466, 7.624009],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_4bd82b65832cffdd06b65d78ea85519f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9023942fa46d989ada6ab975c1091ea9 = $(`<div id="html_9023942fa46d989ada6ab975c1091ea9" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Turngemeinde Münster e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_4bd82b65832cffdd06b65d78ea85519f.setContent(html_9023942fa46d989ada6ab975c1091ea9);
+            
+        
+
+        circle_marker_40c48c629637e574d95370ae0a1596e3.bindPopup(popup_4bd82b65832cffdd06b65d78ea85519f)
+        ;
+
+        
+    
+    
+            var circle_marker_eb2fcdfe41f8d688dd9897803b6199ed = L.circleMarker(
+                [51.9036634, 7.6266061],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_6fddc40bfc87c44166e72b502ca54037 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd34f9dbebe542ed61765d1ba47214ec = $(`<div id="html_cd34f9dbebe542ed61765d1ba47214ec" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Tus Hiltrup<br>         <i>Taekwon-Do</i>         </div>`)[0];
+                popup_6fddc40bfc87c44166e72b502ca54037.setContent(html_cd34f9dbebe542ed61765d1ba47214ec);
+            
+        
+
+        circle_marker_eb2fcdfe41f8d688dd9897803b6199ed.bindPopup(popup_6fddc40bfc87c44166e72b502ca54037)
+        ;
+
+        
+    
+    
+            var circle_marker_093655bd15b576e2f65ee5d66ab9ffb1 = L.circleMarker(
+                [51.9373499, 7.6123909],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_a15e8edda58da8e7f80d64ffbd359762 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_494d01f51f96098331bf0ea6b9886d2e = $(`<div id="html_494d01f51f96098331bf0ea6b9886d2e" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK SV Borussia 07 e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_a15e8edda58da8e7f80d64ffbd359762.setContent(html_494d01f51f96098331bf0ea6b9886d2e);
+            
+        
+
+        circle_marker_093655bd15b576e2f65ee5d66ab9ffb1.bindPopup(popup_a15e8edda58da8e7f80d64ffbd359762)
+        ;
+
+        
+    
+    
+            var circle_marker_4edab57183783cc3f3c0e36916d77034 = L.circleMarker(
+                [51.9521235, 7.6740152],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_287424a2500d6d952d197d538e8ccad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9038a96d7bc40af42bc5b1890ba2c9f = $(`<div id="html_c9038a96d7bc40af42bc5b1890ba2c9f" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Unbekannt<br>         <i>Gymnastik</i>         </div>`)[0];
+                popup_287424a2500d6d952d197d538e8ccad1.setContent(html_c9038a96d7bc40af42bc5b1890ba2c9f);
+            
+        
+
+        circle_marker_4edab57183783cc3f3c0e36916d77034.bindPopup(popup_287424a2500d6d952d197d538e8ccad1)
+        ;
+
+        
+    
+    
+            var circle_marker_18c100c88838aed2a31a4238eb257fa4 = L.circleMarker(
+                [51.9076304, 7.6658532],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d6ae0c6ba137f299248d0b4fde9330b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aed28cf296bea0cc67e4d648644ff139 = $(`<div id="html_aed28cf296bea0cc67e4d648644ff139" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_d6ae0c6ba137f299248d0b4fde9330b5.setContent(html_aed28cf296bea0cc67e4d648644ff139);
+            
+        
+
+        circle_marker_18c100c88838aed2a31a4238eb257fa4.bindPopup(popup_d6ae0c6ba137f299248d0b4fde9330b5)
+        ;
+
+        
+    
+    
+            var circle_marker_57e45ac284ff66b6bea9dad907479074 = L.circleMarker(
+                [51.9076304, 7.6658532],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_5c6fce78b7ce1a482ea22cb054890ea2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d44072313f85bf7ebed3417531766d20 = $(`<div id="html_d44072313f85bf7ebed3417531766d20" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Betriebssportverband Münster e.V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_5c6fce78b7ce1a482ea22cb054890ea2.setContent(html_d44072313f85bf7ebed3417531766d20);
+            
+        
+
+        circle_marker_57e45ac284ff66b6bea9dad907479074.bindPopup(popup_5c6fce78b7ce1a482ea22cb054890ea2)
+        ;
+
+        
+    
+    
+            var circle_marker_742c84cfc9dff8c741b1dfd30a55a970 = L.circleMarker(
+                [51.9692239, 7.6278407],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_530aa8081092e51546500f52ea4ada6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69232c2e85d8a2cf390f57a64cbb51d7 = $(`<div id="html_69232c2e85d8a2cf390f57a64cbb51d7" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_530aa8081092e51546500f52ea4ada6e.setContent(html_69232c2e85d8a2cf390f57a64cbb51d7);
+            
+        
+
+        circle_marker_742c84cfc9dff8c741b1dfd30a55a970.bindPopup(popup_530aa8081092e51546500f52ea4ada6e)
+        ;
+
+        
+    
+    
+            var circle_marker_029541bb5baa8fa985090b5ed89fce8c = L.circleMarker(
+                [51.9692239, 7.6278407],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_21fd9e685e3d4d90a8acd4ec43bdfa60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_381a1eac6918b0288135047183174940 = $(`<div id="html_381a1eac6918b0288135047183174940" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Laufsportfreunde Münster e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_21fd9e685e3d4d90a8acd4ec43bdfa60.setContent(html_381a1eac6918b0288135047183174940);
+            
+        
+
+        circle_marker_029541bb5baa8fa985090b5ed89fce8c.bindPopup(popup_21fd9e685e3d4d90a8acd4ec43bdfa60)
+        ;
+
+        
+    
+    
+            var circle_marker_a094567f09dac0fd846c4faaddf2a8bf = L.circleMarker(
+                [51.9657268, 7.6310612],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_812d04201eb47f928cc0a5bb3753accb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7efbc3c76fd0d76a5f419249768b72fc = $(`<div id="html_7efbc3c76fd0d76a5f419249768b72fc" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turngemeinde Münster e. V.<br>         <i>Fechten</i>         </div>`)[0];
+                popup_812d04201eb47f928cc0a5bb3753accb.setContent(html_7efbc3c76fd0d76a5f419249768b72fc);
+            
+        
+
+        circle_marker_a094567f09dac0fd846c4faaddf2a8bf.bindPopup(popup_812d04201eb47f928cc0a5bb3753accb)
+        ;
+
+        
+    
+    
+            var circle_marker_683a020ed9cdd868d13928ada066bac2 = L.circleMarker(
+                [51.958035, 7.6534782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_218cfd4b2ddd1de31eb98e83e6816e54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3dd71414bfc5a716f65aefb1d6c388d = $(`<div id="html_d3dd71414bfc5a716f65aefb1d6c388d" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Inline-Skating-Club Münster e. V.<br>         <i>Inline-Skaten</i>         </div>`)[0];
+                popup_218cfd4b2ddd1de31eb98e83e6816e54.setContent(html_d3dd71414bfc5a716f65aefb1d6c388d);
+            
+        
+
+        circle_marker_683a020ed9cdd868d13928ada066bac2.bindPopup(popup_218cfd4b2ddd1de31eb98e83e6816e54)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca17153266840a48376dd0f2be44fdf = L.circleMarker(
+                [51.9386059, 7.6129888],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_c4ca1b160147007fc66c8bf1c31d288d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c58072705779c395511b9ba8f13c27c4 = $(`<div id="html_c58072705779c395511b9ba8f13c27c4" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Universität Münster ZBE Hochschulsport<br>         <i>Basketball</i>         </div>`)[0];
+                popup_c4ca1b160147007fc66c8bf1c31d288d.setContent(html_c58072705779c395511b9ba8f13c27c4);
+            
+        
+
+        circle_marker_0ca17153266840a48376dd0f2be44fdf.bindPopup(popup_c4ca1b160147007fc66c8bf1c31d288d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b3174c4d13f818f2f15dd6096d363f0 = L.circleMarker(
+                [51.9901032, 7.7036485],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d364356c23c73da34d29541c668a5ceb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65be45660c4a5451e7b489e190366ec8 = $(`<div id="html_65be45660c4a5451e7b489e190366ec8" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_d364356c23c73da34d29541c668a5ceb.setContent(html_65be45660c4a5451e7b489e190366ec8);
+            
+        
+
+        circle_marker_4b3174c4d13f818f2f15dd6096d363f0.bindPopup(popup_d364356c23c73da34d29541c668a5ceb)
+        ;
+
+        
+    
+    
+            var circle_marker_b39b4bd89a8816e96c6b606b231dede2 = L.circleMarker(
+                [51.9901032, 7.7036485],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_33c8bea1412d031b9266d842b116a7bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b7961df368bcb9b8e1abd3c96513dc3 = $(`<div id="html_9b7961df368bcb9b8e1abd3c96513dc3" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         TSV Handorf e.V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_33c8bea1412d031b9266d842b116a7bc.setContent(html_9b7961df368bcb9b8e1abd3c96513dc3);
+            
+        
+
+        circle_marker_b39b4bd89a8816e96c6b606b231dede2.bindPopup(popup_33c8bea1412d031b9266d842b116a7bc)
+        ;
+
+        
+    
+    
+            var circle_marker_2e1c24be9da7be44996e705c503147f0 = L.circleMarker(
+                [51.9637713, 7.6491668],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_a3fcec97ee56b57ff275ee8bc20120ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_116cf02b300c5249dc0bd610996650c0 = $(`<div id="html_116cf02b300c5249dc0bd610996650c0" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Frauensportverein Münster e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_a3fcec97ee56b57ff275ee8bc20120ce.setContent(html_116cf02b300c5249dc0bd610996650c0);
+            
+        
+
+        circle_marker_2e1c24be9da7be44996e705c503147f0.bindPopup(popup_a3fcec97ee56b57ff275ee8bc20120ce)
+        ;
+
+        
+    
+    
+            var circle_marker_dfd44efce15341264cd4afd8c9463706 = L.circleMarker(
+                [51.9677932, 7.581247],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_332b67f612e6e3e5c758bc2a35e6aeee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ac2000c86ea8f052e6eb1fe58403898 = $(`<div id="html_8ac2000c86ea8f052e6eb1fe58403898" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         TSC Münster-Gievenbeck e.V.<br>         <i>Gymnastik</i>         </div>`)[0];
+                popup_332b67f612e6e3e5c758bc2a35e6aeee.setContent(html_8ac2000c86ea8f052e6eb1fe58403898);
+            
+        
+
+        circle_marker_dfd44efce15341264cd4afd8c9463706.bindPopup(popup_332b67f612e6e3e5c758bc2a35e6aeee)
+        ;
+
+        
+    
+    
+            var circle_marker_18e60be2e0a9956e8cc031065955d632 = L.circleMarker(
+                [51.9677932, 7.581247],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_1cbfb5aa904a3839417963fbb6f716ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71a8c1c1870e91b6bd590b2f21381c50 = $(`<div id="html_71a8c1c1870e91b6bd590b2f21381c50" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         TSC Münster-Gievenbeck e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_1cbfb5aa904a3839417963fbb6f716ef.setContent(html_71a8c1c1870e91b6bd590b2f21381c50);
+            
+        
+
+        circle_marker_18e60be2e0a9956e8cc031065955d632.bindPopup(popup_1cbfb5aa904a3839417963fbb6f716ef)
+        ;
+
+        
+    
+    
+            var circle_marker_4f23ecce83786d1796008cefb105c3aa = L.circleMarker(
+                [51.9891999, 7.7063296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_54f916ac7eb3b0a10467819c36d7ab45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a92ccf12197f35a367011b0d294a112 = $(`<div id="html_2a92ccf12197f35a367011b0d294a112" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         TSV Handorf e.V.<br>         <i>Trampolinturnen</i>         </div>`)[0];
+                popup_54f916ac7eb3b0a10467819c36d7ab45.setContent(html_2a92ccf12197f35a367011b0d294a112);
+            
+        
+
+        circle_marker_4f23ecce83786d1796008cefb105c3aa.bindPopup(popup_54f916ac7eb3b0a10467819c36d7ab45)
+        ;
+
+        
+    
+    
+            var circle_marker_10a9e8a5719eab6803ac85ef742eb60d = L.circleMarker(
+                [51.9891999, 7.7063296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_8719277d0d5c0c71523e3e88ede82d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e28ad141ecebbb0c5f26eace9f42852 = $(`<div id="html_4e28ad141ecebbb0c5f26eace9f42852" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         TSV Handorf e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_8719277d0d5c0c71523e3e88ede82d38.setContent(html_4e28ad141ecebbb0c5f26eace9f42852);
+            
+        
+
+        circle_marker_10a9e8a5719eab6803ac85ef742eb60d.bindPopup(popup_8719277d0d5c0c71523e3e88ede82d38)
+        ;
+
+        
+    
+    
+            var circle_marker_abda235f849567e0a09f25c2bebd7101 = L.circleMarker(
+                [51.9652177, 7.5669587],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f86c72ea45b9516a9b707c63f0c7d17f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3e887ce3498a51b655511ded1121a8b = $(`<div id="html_c3e887ce3498a51b655511ded1121a8b" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         TSC Münster-Gievenbeck e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_f86c72ea45b9516a9b707c63f0c7d17f.setContent(html_c3e887ce3498a51b655511ded1121a8b);
+            
+        
+
+        circle_marker_abda235f849567e0a09f25c2bebd7101.bindPopup(popup_f86c72ea45b9516a9b707c63f0c7d17f)
+        ;
+
+        
+    
+    
+            var circle_marker_82b8599ef43a15a1634abadbf23c8bc1 = L.circleMarker(
+                [51.9153201, 7.7296279],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_bb97ef9a255d06789f7489071c00477d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dae725d5d78a6dcd42feeb54976059e1 = $(`<div id="html_dae725d5d78a6dcd42feeb54976059e1" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Turnen</i>         </div>`)[0];
+                popup_bb97ef9a255d06789f7489071c00477d.setContent(html_dae725d5d78a6dcd42feeb54976059e1);
+            
+        
+
+        circle_marker_82b8599ef43a15a1634abadbf23c8bc1.bindPopup(popup_bb97ef9a255d06789f7489071c00477d)
+        ;
+
+        
+    
+    
+            var circle_marker_129cfd17c92b38cfc39f2054649da79a = L.circleMarker(
+                [51.9914984, 7.6482373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_ef1af482c144f9db119c594eb58ba2ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac3f1a93404866f223923ba8f9228ded = $(`<div id="html_ac3f1a93404866f223923ba8f9228ded" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportverein Teutonia Coerde 60 e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_ef1af482c144f9db119c594eb58ba2ef.setContent(html_ac3f1a93404866f223923ba8f9228ded);
+            
+        
+
+        circle_marker_129cfd17c92b38cfc39f2054649da79a.bindPopup(popup_ef1af482c144f9db119c594eb58ba2ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f8fb2d212c98861aa96823e6053a596e = L.circleMarker(
+                [51.9561238, 7.646928],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_3d17b6ac312b82bf077d4fba92aa8e06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4b10c880f7806a492f908800efd778 = $(`<div id="html_2a4b10c880f7806a492f908800efd778" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turngemeinde Münster e. V.<br>         <i>Judo</i>         </div>`)[0];
+                popup_3d17b6ac312b82bf077d4fba92aa8e06.setContent(html_2a4b10c880f7806a492f908800efd778);
+            
+        
+
+        circle_marker_f8fb2d212c98861aa96823e6053a596e.bindPopup(popup_3d17b6ac312b82bf077d4fba92aa8e06)
+        ;
+
+        
+    
+    
+            var circle_marker_7edb976cb878958f1d665d664b4b1a23 = L.circleMarker(
+                [51.9754428, 7.6271223],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_499cee238a5a20fee0296bf769c65cb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a63fbf3318243a84bd90eed65020e5eb = $(`<div id="html_a63fbf3318243a84bd90eed65020e5eb" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         UBC Münster  <br>         <i>Basketball</i>         </div>`)[0];
+                popup_499cee238a5a20fee0296bf769c65cb7.setContent(html_a63fbf3318243a84bd90eed65020e5eb);
+            
+        
+
+        circle_marker_7edb976cb878958f1d665d664b4b1a23.bindPopup(popup_499cee238a5a20fee0296bf769c65cb7)
+        ;
+
+        
+    
+    
+            var circle_marker_d13bd28aca938b9ccdfb91d79cb7c668 = L.circleMarker(
+                [51.9754428, 7.6271223],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_968d9f11425671f6b18c47161337c471 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ef0f34e267f51c22561d73a7a6553c1 = $(`<div id="html_7ef0f34e267f51c22561d73a7a6553c1" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         UBC Münster  <br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_968d9f11425671f6b18c47161337c471.setContent(html_7ef0f34e267f51c22561d73a7a6553c1);
+            
+        
+
+        circle_marker_d13bd28aca938b9ccdfb91d79cb7c668.bindPopup(popup_968d9f11425671f6b18c47161337c471)
+        ;
+
+        
+    
+    
+            var circle_marker_38ba29da42d8e6681ea34f3bd5705ddc = L.circleMarker(
+                [51.9754428, 7.6271223],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d3820cd4cbdc8f72a03a13bdff8f05f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df544317c06898ee6ba853a8a46c2428 = $(`<div id="html_df544317c06898ee6ba853a8a46c2428" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         UBC Münster  <br>         <i>Krafttraining</i>         </div>`)[0];
+                popup_d3820cd4cbdc8f72a03a13bdff8f05f7.setContent(html_df544317c06898ee6ba853a8a46c2428);
+            
+        
+
+        circle_marker_38ba29da42d8e6681ea34f3bd5705ddc.bindPopup(popup_d3820cd4cbdc8f72a03a13bdff8f05f7)
+        ;
+
+        
+    
+    
+            var circle_marker_75f1fc08d7ba29f44c7d6630b764f0f4 = L.circleMarker(
+                [51.9982078, 7.6124538],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_51d6b0f2669a3e1f54af01147d81c381 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6f0895046e3477c07d916e35bad791b = $(`<div id="html_e6f0895046e3477c07d916e35bad791b" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Sportclub Westfalia Kinderhaus e.V.<br>         <i>Ringen</i>         </div>`)[0];
+                popup_51d6b0f2669a3e1f54af01147d81c381.setContent(html_e6f0895046e3477c07d916e35bad791b);
+            
+        
+
+        circle_marker_75f1fc08d7ba29f44c7d6630b764f0f4.bindPopup(popup_51d6b0f2669a3e1f54af01147d81c381)
+        ;
+
+        
+    
+    
+            var circle_marker_5eca9d720a1148d18be830cecb9e3a33 = L.circleMarker(
+                [51.9326205, 7.580143],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_01bd3ce8be2c0c08acb17314d337d7ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55046823a3d74a34925674eff836cd4d = $(`<div id="html_55046823a3d74a34925674eff836cd4d" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Polizeisportverein Münster e.V.<br>         <i>Judo</i>         </div>`)[0];
+                popup_01bd3ce8be2c0c08acb17314d337d7ac.setContent(html_55046823a3d74a34925674eff836cd4d);
+            
+        
+
+        circle_marker_5eca9d720a1148d18be830cecb9e3a33.bindPopup(popup_01bd3ce8be2c0c08acb17314d337d7ac)
+        ;
+
+        
+    
+    
+            var circle_marker_061c813d2a09d493957ac87907225bfa = L.circleMarker(
+                [51.9326205, 7.580143],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_83ffa1ed3625a2b71bd5d2a4bd42e222 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da41b9ccc00fa8a0da69b07b27904c72 = $(`<div id="html_da41b9ccc00fa8a0da69b07b27904c72" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         DJK Wacker Mecklenbeck e. V.<br>         <i>Geräteturnen</i>         </div>`)[0];
+                popup_83ffa1ed3625a2b71bd5d2a4bd42e222.setContent(html_da41b9ccc00fa8a0da69b07b27904c72);
+            
+        
+
+        circle_marker_061c813d2a09d493957ac87907225bfa.bindPopup(popup_83ffa1ed3625a2b71bd5d2a4bd42e222)
+        ;
+
+        
+    
+    
+            var circle_marker_6d8828a097fc6334efa2be61a29f9dfb = L.circleMarker(
+                [51.9632498, 7.6777742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_7182bdb599fab7a9b3855066b7f858ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb3967bcd544350936f2545f4d48b8a = $(`<div id="html_eeb3967bcd544350936f2545f4d48b8a" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Eintracht Münster e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_7182bdb599fab7a9b3855066b7f858ef.setContent(html_eeb3967bcd544350936f2545f4d48b8a);
+            
+        
+
+        circle_marker_6d8828a097fc6334efa2be61a29f9dfb.bindPopup(popup_7182bdb599fab7a9b3855066b7f858ef)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f71dfaa991b25dee11c1afc0189d2a = L.circleMarker(
+                [51.939274, 7.6220109],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_892de2a81832594b7c22937247571bb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e69b0ec6a7675c84eabb662e71970b5 = $(`<div id="html_3e69b0ec6a7675c84eabb662e71970b5" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_892de2a81832594b7c22937247571bb9.setContent(html_3e69b0ec6a7675c84eabb662e71970b5);
+            
+        
+
+        circle_marker_c5f71dfaa991b25dee11c1afc0189d2a.bindPopup(popup_892de2a81832594b7c22937247571bb9)
+        ;
+
+        
+    
+    
+            var circle_marker_f79b253731e53092a0911e6f5494d1f5 = L.circleMarker(
+                [51.939274, 7.6220109],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_e7e5541d14f6bf2606d3f7b430d8c4c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ee5357f20c87677142f98db71b9488b = $(`<div id="html_9ee5357f20c87677142f98db71b9488b" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK SV Borussia 07 e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_e7e5541d14f6bf2606d3f7b430d8c4c2.setContent(html_9ee5357f20c87677142f98db71b9488b);
+            
+        
+
+        circle_marker_f79b253731e53092a0911e6f5494d1f5.bindPopup(popup_e7e5541d14f6bf2606d3f7b430d8c4c2)
+        ;
+
+        
+    
+    
+            var circle_marker_5265140a0bfb83059100ee80d4e1b399 = L.circleMarker(
+                [51.9246017, 7.6161066],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_bc4f6b86c34568d13cbdef1828d1d64d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afeac837275295e8ba38e8c322be1540 = $(`<div id="html_afeac837275295e8ba38e8c322be1540" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Stadtteilhaus Lorenz Süd<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_bc4f6b86c34568d13cbdef1828d1d64d.setContent(html_afeac837275295e8ba38e8c322be1540);
+            
+        
+
+        circle_marker_5265140a0bfb83059100ee80d4e1b399.bindPopup(popup_bc4f6b86c34568d13cbdef1828d1d64d)
+        ;
+
+        
+    
+    
+            var circle_marker_83dc0ba0abf3639e534daebdc4f2900b = L.circleMarker(
+                [51.9668954, 7.6382977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_8e471aba7c86ddb718f9e5cf3ddb698c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f744aade9173133f6f425741b11de0e = $(`<div id="html_8f744aade9173133f6f425741b11de0e" style="width: 100.0%; height: 100.0%;">         <b>Schulsport</b><br>         Ratsgymnasium (309)<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_8e471aba7c86ddb718f9e5cf3ddb698c.setContent(html_8f744aade9173133f6f425741b11de0e);
+            
+        
+
+        circle_marker_83dc0ba0abf3639e534daebdc4f2900b.bindPopup(popup_8e471aba7c86ddb718f9e5cf3ddb698c)
+        ;
+
+        
+    
+    
+            var circle_marker_1d1d861370ab5d5bc6f7c6eedb77123c = L.circleMarker(
+                [51.9737797, 7.6206705],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_0591d011311315929ff9dabef7f68a10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_974fb0f153f601acc47cc418f636cdae = $(`<div id="html_974fb0f153f601acc47cc418f636cdae" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         DJK Grün-Weiß Marathon Münster e. V.<br>         <i>Taekwon-Do</i>         </div>`)[0];
+                popup_0591d011311315929ff9dabef7f68a10.setContent(html_974fb0f153f601acc47cc418f636cdae);
+            
+        
+
+        circle_marker_1d1d861370ab5d5bc6f7c6eedb77123c.bindPopup(popup_0591d011311315929ff9dabef7f68a10)
+        ;
+
+        
+    
+    
+            var circle_marker_26b8fec51e67f0fb6004e86401b9fd05 = L.circleMarker(
+                [51.9737797, 7.6206705],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_790e2902b948de6936bb19189c242efa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c60d4dc38618880549fb0e7c78d6fc36 = $(`<div id="html_c60d4dc38618880549fb0e7c78d6fc36" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_790e2902b948de6936bb19189c242efa.setContent(html_c60d4dc38618880549fb0e7c78d6fc36);
+            
+        
+
+        circle_marker_26b8fec51e67f0fb6004e86401b9fd05.bindPopup(popup_790e2902b948de6936bb19189c242efa)
+        ;
+
+        
+    
+    
+            var circle_marker_93faed3dbea71dc26256f31d3e0e79ee = L.circleMarker(
+                [51.9737797, 7.6206705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_b112b81112ad0ed1a64054d05fcc782a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27b0e6e4e4b01e3eb2839aaf308e6d9b = $(`<div id="html_27b0e6e4e4b01e3eb2839aaf308e6d9b" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK Grün-Weiß Marathon Münster e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_b112b81112ad0ed1a64054d05fcc782a.setContent(html_27b0e6e4e4b01e3eb2839aaf308e6d9b);
+            
+        
+
+        circle_marker_93faed3dbea71dc26256f31d3e0e79ee.bindPopup(popup_b112b81112ad0ed1a64054d05fcc782a)
+        ;
+
+        
+    
+    
+            var circle_marker_10b95828afd9fdfc645297501064e771 = L.circleMarker(
+                [51.9687459, 7.6207397],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_2250f03c654c81396cbc4e7de004d450 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_887a0e6b6493a2d8b984035d87608bc9 = $(`<div id="html_887a0e6b6493a2d8b984035d87608bc9" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportclub Münster 08 e.V.<br>         <i>Frisbee</i>         </div>`)[0];
+                popup_2250f03c654c81396cbc4e7de004d450.setContent(html_887a0e6b6493a2d8b984035d87608bc9);
+            
+        
+
+        circle_marker_10b95828afd9fdfc645297501064e771.bindPopup(popup_2250f03c654c81396cbc4e7de004d450)
+        ;
+
+        
+    
+    
+            var circle_marker_a20ca4170a6ffbe1df1e50c72b89a385 = L.circleMarker(
+                [51.9687459, 7.6207397],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_5cb203bdb684674b4c9c0408e861e895 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59a935377ef9a04f34dd033af9eea696 = $(`<div id="html_59a935377ef9a04f34dd033af9eea696" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_5cb203bdb684674b4c9c0408e861e895.setContent(html_59a935377ef9a04f34dd033af9eea696);
+            
+        
+
+        circle_marker_a20ca4170a6ffbe1df1e50c72b89a385.bindPopup(popup_5cb203bdb684674b4c9c0408e861e895)
+        ;
+
+        
+    
+    
+            var circle_marker_717180c83b08db0d7588eade90169d00 = L.circleMarker(
+                [51.9687459, 7.6207397],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_e2da5316ec68fc48c992326fec87abb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf4d7a35c8a7685012a194574bf790c1 = $(`<div id="html_bf4d7a35c8a7685012a194574bf790c1" style="width: 100.0%; height: 100.0%;">         <b>Schulsport</b><br>         Schillergymnasium (310)<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_e2da5316ec68fc48c992326fec87abb8.setContent(html_bf4d7a35c8a7685012a194574bf790c1);
+            
+        
+
+        circle_marker_717180c83b08db0d7588eade90169d00.bindPopup(popup_e2da5316ec68fc48c992326fec87abb8)
+        ;
+
+        
+    
+    
+            var circle_marker_20556e77c1db1175bd3e14f8d187294f = L.circleMarker(
+                [51.9014398, 7.6411826],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_43496a4b60b535b12365af6ced27fb56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf2eb4bf14fcc09a9651f3d6300354ba = $(`<div id="html_bf2eb4bf14fcc09a9651f3d6300354ba" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Tus Hiltrup<br>         <i>Bodyforming</i>         </div>`)[0];
+                popup_43496a4b60b535b12365af6ced27fb56.setContent(html_bf2eb4bf14fcc09a9651f3d6300354ba);
+            
+        
+
+        circle_marker_20556e77c1db1175bd3e14f8d187294f.bindPopup(popup_43496a4b60b535b12365af6ced27fb56)
+        ;
+
+        
+    
+    
+            var circle_marker_55d88ea5fc71d1dc40a17a5339071d1f = L.circleMarker(
+                [51.9014398, 7.6411826],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_405f01d68f4b9548a121a0046e6ded57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12dec2ca24e8407c4697e5dc0929f5aa = $(`<div id="html_12dec2ca24e8407c4697e5dc0929f5aa" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Unbekannt<br>         <i>Konditionstraining</i>         </div>`)[0];
+                popup_405f01d68f4b9548a121a0046e6ded57.setContent(html_12dec2ca24e8407c4697e5dc0929f5aa);
+            
+        
+
+        circle_marker_55d88ea5fc71d1dc40a17a5339071d1f.bindPopup(popup_405f01d68f4b9548a121a0046e6ded57)
+        ;
+
+        
+    
+    
+            var circle_marker_dc16a7b7d346c3a0bbcc55d1ab87a71a = L.circleMarker(
+                [51.9014398, 7.6411826],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_aecd5797fb85a50b0ce1dd69f0ccd498 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a57b4dd81435b1506367cc6c53498968 = $(`<div id="html_a57b4dd81435b1506367cc6c53498968" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Hiltruper Segelclub e. V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_aecd5797fb85a50b0ce1dd69f0ccd498.setContent(html_a57b4dd81435b1506367cc6c53498968);
+            
+        
+
+        circle_marker_dc16a7b7d346c3a0bbcc55d1ab87a71a.bindPopup(popup_aecd5797fb85a50b0ce1dd69f0ccd498)
+        ;
+
+        
+    
+    
+            var circle_marker_3667c0cb5e9f18382306181a05d74a53 = L.circleMarker(
+                [51.9983516, 7.604638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_836d15a81f5c46d52d6f133b0b13e8d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58cced57816769bbd7e1eab04260a678 = $(`<div id="html_58cced57816769bbd7e1eab04260a678" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Westfalia Kinderhaus e.V.<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_836d15a81f5c46d52d6f133b0b13e8d1.setContent(html_58cced57816769bbd7e1eab04260a678);
+            
+        
+
+        circle_marker_3667c0cb5e9f18382306181a05d74a53.bindPopup(popup_836d15a81f5c46d52d6f133b0b13e8d1)
+        ;
+
+        
+    
+    
+            var circle_marker_aa066046d19fedb6f576d42f151f198e = L.circleMarker(
+                [51.9983516, 7.604638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_bb00e9c674f1fbbb8693de84ab0db10b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fc6f44e67ce9aa06f4c0e7309406a54 = $(`<div id="html_5fc6f44e67ce9aa06f4c0e7309406a54" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Westfalia Kinderhaus e.V.<br>         <i>Basketball</i>         </div>`)[0];
+                popup_bb00e9c674f1fbbb8693de84ab0db10b.setContent(html_5fc6f44e67ce9aa06f4c0e7309406a54);
+            
+        
+
+        circle_marker_aa066046d19fedb6f576d42f151f198e.bindPopup(popup_bb00e9c674f1fbbb8693de84ab0db10b)
+        ;
+
+        
+    
+    
+            var circle_marker_335a55ab972b5eb9c67b53508ad0bc78 = L.circleMarker(
+                [51.9549318, 7.5290013],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_ef6737ffc6e08eb82a0cb09f32a7934c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d4f4546799cfac00709c0037284fa73 = $(`<div id="html_9d4f4546799cfac00709c0037284fa73" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         BSV Roxel e. V.<br>         <i>Handball</i>         </div>`)[0];
+                popup_ef6737ffc6e08eb82a0cb09f32a7934c.setContent(html_9d4f4546799cfac00709c0037284fa73);
+            
+        
+
+        circle_marker_335a55ab972b5eb9c67b53508ad0bc78.bindPopup(popup_ef6737ffc6e08eb82a0cb09f32a7934c)
+        ;
+
+        
+    
+    
+            var circle_marker_04e5b3fa9d512987d8999f114280e72a = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_b1f55303c0f8718df4ee95575498007b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d127d90a7c28d24e37c4c2b9a502b4c = $(`<div id="html_0d127d90a7c28d24e37c4c2b9a502b4c" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Leichtathletik</i>         </div>`)[0];
+                popup_b1f55303c0f8718df4ee95575498007b.setContent(html_0d127d90a7c28d24e37c4c2b9a502b4c);
+            
+        
+
+        circle_marker_04e5b3fa9d512987d8999f114280e72a.bindPopup(popup_b1f55303c0f8718df4ee95575498007b)
+        ;
+
+        
+    
+    
+            var circle_marker_b31e0c05eea6957a90d5b4e3882fc590 = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_fa2dc6407acdf093fb581d7ca095b9c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19719d907409c0a703c0921c59ffa9dc = $(`<div id="html_19719d907409c0a703c0921c59ffa9dc" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Basketball</i>         </div>`)[0];
+                popup_fa2dc6407acdf093fb581d7ca095b9c4.setContent(html_19719d907409c0a703c0921c59ffa9dc);
+            
+        
+
+        circle_marker_b31e0c05eea6957a90d5b4e3882fc590.bindPopup(popup_fa2dc6407acdf093fb581d7ca095b9c4)
+        ;
+
+        
+    
+    
+            var circle_marker_fac798c20a827d75512123e330a7f876 = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_9d548507433d604ec581639b8d311f84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dccb272d472357dd7d08c9c14f47ca3f = $(`<div id="html_dccb272d472357dd7d08c9c14f47ca3f" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Basketball</i>         </div>`)[0];
+                popup_9d548507433d604ec581639b8d311f84.setContent(html_dccb272d472357dd7d08c9c14f47ca3f);
+            
+        
+
+        circle_marker_fac798c20a827d75512123e330a7f876.bindPopup(popup_9d548507433d604ec581639b8d311f84)
+        ;
+
+        
+    
+    
+            var circle_marker_de22bc7ddd9c678651e7f86fea7cda2a = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_15ec2020a58de18215ab16bc09b197a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3e16a950d39c183aa2390f3ddbe509d = $(`<div id="html_c3e16a950d39c183aa2390f3ddbe509d" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Unbekannt<br>         <i>Tanz</i>         </div>`)[0];
+                popup_15ec2020a58de18215ab16bc09b197a9.setContent(html_c3e16a950d39c183aa2390f3ddbe509d);
+            
+        
+
+        circle_marker_de22bc7ddd9c678651e7f86fea7cda2a.bindPopup(popup_15ec2020a58de18215ab16bc09b197a9)
+        ;
+
+        
+    
+    
+            var circle_marker_ec51ca71373ff240576960a374478387 = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_b104d680f20d731b1e59bd71c5dfe62d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f5c7d357983e4e130114fdea6ace76d = $(`<div id="html_1f5c7d357983e4e130114fdea6ace76d" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         VfL Wolbeck 1910 e. V.<br>         <i>Fußball</i>         </div>`)[0];
+                popup_b104d680f20d731b1e59bd71c5dfe62d.setContent(html_1f5c7d357983e4e130114fdea6ace76d);
+            
+        
+
+        circle_marker_ec51ca71373ff240576960a374478387.bindPopup(popup_b104d680f20d731b1e59bd71c5dfe62d)
+        ;
+
+        
+    
+    
+            var circle_marker_0b6bdfedec92f88a90dfb68510be43f4 = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_891406921381ec8148cec4b4ba144b1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_629f5b4519ee465b926485744aa34584 = $(`<div id="html_629f5b4519ee465b926485744aa34584" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Trampolinturnen</i>         </div>`)[0];
+                popup_891406921381ec8148cec4b4ba144b1f.setContent(html_629f5b4519ee465b926485744aa34584);
+            
+        
+
+        circle_marker_0b6bdfedec92f88a90dfb68510be43f4.bindPopup(popup_891406921381ec8148cec4b4ba144b1f)
+        ;
+
+        
+    
+    
+            var circle_marker_a2009afe689eda54fd70f861e61fb2b2 = L.circleMarker(
+                [51.9146987, 7.7202582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_9f01d16b0d948f92d787481473335363 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_186c429e65fab908bdc467fd4d0c2897 = $(`<div id="html_186c429e65fab908bdc467fd4d0c2897" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turnverein Wolbeck e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_9f01d16b0d948f92d787481473335363.setContent(html_186c429e65fab908bdc467fd4d0c2897);
+            
+        
+
+        circle_marker_a2009afe689eda54fd70f861e61fb2b2.bindPopup(popup_9f01d16b0d948f92d787481473335363)
+        ;
+
+        
+    
+    
+            var circle_marker_58acda3fdf165da24c7bdd54cada2ebe = L.circleMarker(
+                [51.9541292, 7.599649],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f9a11d9de8e2d0418e45d8a8ee2108d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bc5507f6986dd99cf6e3ca76256b479 = $(`<div id="html_5bc5507f6986dd99cf6e3ca76256b479" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Universität Münster ZBE Hochschulsport<br>         <i>Karate</i>         </div>`)[0];
+                popup_f9a11d9de8e2d0418e45d8a8ee2108d6.setContent(html_5bc5507f6986dd99cf6e3ca76256b479);
+            
+        
+
+        circle_marker_58acda3fdf165da24c7bdd54cada2ebe.bindPopup(popup_f9a11d9de8e2d0418e45d8a8ee2108d6)
+        ;
+
+        
+    
+    
+            var circle_marker_41fe8a64d479ec1916e5df0012f7b668 = L.circleMarker(
+                [51.9541292, 7.599649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_c9db32cb86af9f05d0c729b337a49e6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88946e5f1e12649609737dee882152a3 = $(`<div id="html_88946e5f1e12649609737dee882152a3" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sparta Münster e. V.<br>         <i>Handball</i>         </div>`)[0];
+                popup_c9db32cb86af9f05d0c729b337a49e6f.setContent(html_88946e5f1e12649609737dee882152a3);
+            
+        
+
+        circle_marker_41fe8a64d479ec1916e5df0012f7b668.bindPopup(popup_c9db32cb86af9f05d0c729b337a49e6f)
+        ;
+
+        
+    
+    
+            var circle_marker_0eddbcbc7d87e8e447b9b699c93aceff = L.circleMarker(
+                [51.9228849, 7.5317226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_efb52b7a5c04dc7f7b5952714e519941 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_098bda35b194c94181c7af280ea7eedd = $(`<div id="html_098bda35b194c94181c7af280ea7eedd" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportverein Concordia Albachten  e. V.<br>         <i>Handball</i>         </div>`)[0];
+                popup_efb52b7a5c04dc7f7b5952714e519941.setContent(html_098bda35b194c94181c7af280ea7eedd);
+            
+        
+
+        circle_marker_0eddbcbc7d87e8e447b9b699c93aceff.bindPopup(popup_efb52b7a5c04dc7f7b5952714e519941)
+        ;
+
+        
+    
+    
+            var circle_marker_aea505d392662921665ef07a78268a8c = L.circleMarker(
+                [51.9228849, 7.5317226],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_2390a8e13042b39540d70d924995234a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_546af1ac70ba7b71a9e5b9ad7be4e3bb = $(`<div id="html_546af1ac70ba7b71a9e5b9ad7be4e3bb" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Unbekannt<br>         <i>Ballspiele</i>         </div>`)[0];
+                popup_2390a8e13042b39540d70d924995234a.setContent(html_546af1ac70ba7b71a9e5b9ad7be4e3bb);
+            
+        
+
+        circle_marker_aea505d392662921665ef07a78268a8c.bindPopup(popup_2390a8e13042b39540d70d924995234a)
+        ;
+
+        
+    
+    
+            var circle_marker_c84dfa68012ec3c1598008e33e5f66c5 = L.circleMarker(
+                [51.9305776, 7.6691753],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_2abd1a4858be5e9067f6827d09cc3cc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29399b84393185d511197fecd4181c55 = $(`<div id="html_29399b84393185d511197fecd4181c55" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportclub Gremmendorf 1946 e.V.<br>         <i>Geräteturnen</i>         </div>`)[0];
+                popup_2abd1a4858be5e9067f6827d09cc3cc7.setContent(html_29399b84393185d511197fecd4181c55);
+            
+        
+
+        circle_marker_c84dfa68012ec3c1598008e33e5f66c5.bindPopup(popup_2abd1a4858be5e9067f6827d09cc3cc7)
+        ;
+
+        
+    
+    
+            var circle_marker_c67adf4a7d2ff8c391a3d005540af555 = L.circleMarker(
+                [51.9305776, 7.6691753],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_944ad719050f05a2f2ee70b465d8579a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed0a2fefdf0eb62d178eae719ba5d678 = $(`<div id="html_ed0a2fefdf0eb62d178eae719ba5d678" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportclub Gremmendorf 1946 e.V.<br>         <i>Aerobic</i>         </div>`)[0];
+                popup_944ad719050f05a2f2ee70b465d8579a.setContent(html_ed0a2fefdf0eb62d178eae719ba5d678);
+            
+        
+
+        circle_marker_c67adf4a7d2ff8c391a3d005540af555.bindPopup(popup_944ad719050f05a2f2ee70b465d8579a)
+        ;
+
+        
+    
+    
+            var circle_marker_e7722f6b00c31c6e209db3789d0f5997 = L.circleMarker(
+                [51.9058416, 7.6440693],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_cc68b6770e917fb09f26fd7fe1e12f7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f87cf7a7f840920ea15d522410b0fce = $(`<div id="html_9f87cf7a7f840920ea15d522410b0fce" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Tus Hiltrup<br>         <i>Basketball</i>         </div>`)[0];
+                popup_cc68b6770e917fb09f26fd7fe1e12f7c.setContent(html_9f87cf7a7f840920ea15d522410b0fce);
+            
+        
+
+        circle_marker_e7722f6b00c31c6e209db3789d0f5997.bindPopup(popup_cc68b6770e917fb09f26fd7fe1e12f7c)
+        ;
+
+        
+    
+    
+            var circle_marker_b2085066bae576c333a1d8593ebf7d2c = L.circleMarker(
+                [51.9058416, 7.6440693],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_491772ae01cfee6b404067b4e0290354 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90497ec032b553a253f9dda4a672b1bd = $(`<div id="html_90497ec032b553a253f9dda4a672b1bd" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Tus Hiltrup<br>         <i>Basketball</i>         </div>`)[0];
+                popup_491772ae01cfee6b404067b4e0290354.setContent(html_90497ec032b553a253f9dda4a672b1bd);
+            
+        
+
+        circle_marker_b2085066bae576c333a1d8593ebf7d2c.bindPopup(popup_491772ae01cfee6b404067b4e0290354)
+        ;
+
+        
+    
+    
+            var circle_marker_11983a5012d04cc99101b76cd9ea05d5 = L.circleMarker(
+                [51.9581052, 7.6592238],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_b357d3290d4dbdc07a847270e2e10bee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_321b6c03bd406ada74e3e987c3d7c375 = $(`<div id="html_321b6c03bd406ada74e3e987c3d7c375" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Münster 08 e.V.<br>         <i>Badminton</i>         </div>`)[0];
+                popup_b357d3290d4dbdc07a847270e2e10bee.setContent(html_321b6c03bd406ada74e3e987c3d7c375);
+            
+        
+
+        circle_marker_11983a5012d04cc99101b76cd9ea05d5.bindPopup(popup_b357d3290d4dbdc07a847270e2e10bee)
+        ;
+
+        
+    
+    
+            var circle_marker_2ebc598bf992dd2aa866e303cf96c063 = L.circleMarker(
+                [51.9581052, 7.6592238],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_61b519bec6d99dda3962d261d10b0cba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e15adf3f888530fd3be274b4aff2c790 = $(`<div id="html_e15adf3f888530fd3be274b4aff2c790" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Sportclub Münster 08 e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_61b519bec6d99dda3962d261d10b0cba.setContent(html_e15adf3f888530fd3be274b4aff2c790);
+            
+        
+
+        circle_marker_2ebc598bf992dd2aa866e303cf96c063.bindPopup(popup_61b519bec6d99dda3962d261d10b0cba)
+        ;
+
+        
+    
+    
+            var circle_marker_a8c8295a60f7c8c7c30b3771f8ec604a = L.circleMarker(
+                [51.9743043, 7.6442194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_d399b583442a68058f762ba70beea653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d94e96ed5a7787edf1c8b275953a67bc = $(`<div id="html_d94e96ed5a7787edf1c8b275953a67bc" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         DJK SV Mauritz 1906 e. V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_d399b583442a68058f762ba70beea653.setContent(html_d94e96ed5a7787edf1c8b275953a67bc);
+            
+        
+
+        circle_marker_a8c8295a60f7c8c7c30b3771f8ec604a.bindPopup(popup_d399b583442a68058f762ba70beea653)
+        ;
+
+        
+    
+    
+            var circle_marker_bd62216bc0fffe2ad8931cb9712f725b = L.circleMarker(
+                [51.9643418, 7.6202785],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_3f08c1ac9190fe2d684e4d4c03be3f38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adfe5015408b79fba974c85afb4a69db = $(`<div id="html_adfe5015408b79fba974c85afb4a69db" style="width: 100.0%; height: 100.0%;">         <b>Wettkampfsport</b><br>         Turngemeinde Münster e. V.<br>         <i>Tischtennis</i>         </div>`)[0];
+                popup_3f08c1ac9190fe2d684e4d4c03be3f38.setContent(html_adfe5015408b79fba974c85afb4a69db);
+            
+        
+
+        circle_marker_bd62216bc0fffe2ad8931cb9712f725b.bindPopup(popup_3f08c1ac9190fe2d684e4d4c03be3f38)
+        ;
+
+        
+    
+    
+            var circle_marker_e629e426365839d58e21c1053202118e = L.circleMarker(
+                [52.001174, 7.6105687],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f50d2bd28bef6d2cb8473d03ba582bf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_432244429048b18396f779c781f124f0 = $(`<div id="html_432244429048b18396f779c781f124f0" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportclub Westfalia Kinderhaus e.V.<br>         <i>Schwertkampf</i>         </div>`)[0];
+                popup_f50d2bd28bef6d2cb8473d03ba582bf6.setContent(html_432244429048b18396f779c781f124f0);
+            
+        
+
+        circle_marker_e629e426365839d58e21c1053202118e.bindPopup(popup_f50d2bd28bef6d2cb8473d03ba582bf6)
+        ;
+
+        
+    
+    
+            var circle_marker_affb26765f54402b63fb46c932648d02 = L.circleMarker(
+                [51.9751469, 7.5712007],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_65ea36b31299e96c01284b8ac4c12644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_103ca8919ed0984ce8d34ca99379550e = $(`<div id="html_103ca8919ed0984ce8d34ca99379550e" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         TSC Münster-Gievenbeck e.V.<br>         <i>Qi Gong</i>         </div>`)[0];
+                popup_65ea36b31299e96c01284b8ac4c12644.setContent(html_103ca8919ed0984ce8d34ca99379550e);
+            
+        
+
+        circle_marker_affb26765f54402b63fb46c932648d02.bindPopup(popup_65ea36b31299e96c01284b8ac4c12644)
+        ;
+
+        
+    
+    
+            var circle_marker_4bc677e430d9f2ad858911a4c7dca139 = L.circleMarker(
+                [51.9566002, 7.6488794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_f2105f74e466125108d54e7fb4c86c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c85fa3a0a7d9940e15965879763b8b29 = $(`<div id="html_c85fa3a0a7d9940e15965879763b8b29" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         Sportgemeinschaft Rasenmäher Wienburg e. V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_f2105f74e466125108d54e7fb4c86c8f.setContent(html_c85fa3a0a7d9940e15965879763b8b29);
+            
+        
+
+        circle_marker_4bc677e430d9f2ad858911a4c7dca139.bindPopup(popup_f2105f74e466125108d54e7fb4c86c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_b0540787eb4584e78c8d3040bb516e26 = L.circleMarker(
+                [51.947192, 7.6188123],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_756fd91d027a39ede2216db483e52bf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a5633c0281d965db69696ce1ab1c7ae = $(`<div id="html_9a5633c0281d965db69696ce1ab1c7ae" style="width: 100.0%; height: 100.0%;">         <b></b><br>         Unbekannt<br>         <i>Keine Angabe</i>         </div>`)[0];
+                popup_756fd91d027a39ede2216db483e52bf1.setContent(html_9a5633c0281d965db69696ce1ab1c7ae);
+            
+        
+
+        circle_marker_b0540787eb4584e78c8d3040bb516e26.bindPopup(popup_756fd91d027a39ede2216db483e52bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_913c8e2facc6b849866e1d55c0486f39 = L.circleMarker(
+                [51.947192, 7.6188123],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_25b1edb0f926773832ffee7516227a83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57457c85a499c69baa6f64a7e3798eaa = $(`<div id="html_57457c85a499c69baa6f64a7e3798eaa" style="width: 100.0%; height: 100.0%;">         <b></b><br>         USC Münster e.V.<br>         <i>Volleyball</i>         </div>`)[0];
+                popup_25b1edb0f926773832ffee7516227a83.setContent(html_57457c85a499c69baa6f64a7e3798eaa);
+            
+        
+
+        circle_marker_913c8e2facc6b849866e1d55c0486f39.bindPopup(popup_25b1edb0f926773832ffee7516227a83)
+        ;
+
+        
+    
+    
+            var circle_marker_dfa7eb783fa222df3080fb2d8e00d75a = L.circleMarker(
+                [51.947192, 7.6188123],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_ce8e2811138b68c7ed14abdee2c774e1);
+        
+    
+        var popup_9f118f9c81b67810aa1121625159da84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c15be169bec62bf533d2cad292756289 = $(`<div id="html_c15be169bec62bf533d2cad292756289" style="width: 100.0%; height: 100.0%;">         <b>Breitensport</b><br>         kreAktivis e. V.<br>         <i>Jazztanz</i>         </div>`)[0];
+                popup_9f118f9c81b67810aa1121625159da84.setContent(html_c15be169bec62bf533d2cad292756289);
+            
+        
+
+        circle_marker_dfa7eb783fa222df3080fb2d8e00d75a.bindPopup(popup_9f118f9c81b67810aa1121625159da84)
+        ;
+
+        
+    
+</script>
+</html>
