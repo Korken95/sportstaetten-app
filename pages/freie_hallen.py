@@ -1,14 +1,18 @@
 import streamlit as st
-from datetime import time
-import mysql.connector
 import folium
 import streamlit.components.v1 as components
+from datetime import time
+import sys, os
+
+# 🔄 Pfad zur db.py im Hauptverzeichnis hinzufügen
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from db import get_db_connection  # ✅ zentrale Verbindungsfunktion
 
 st.set_page_config(page_title="Freie Hallen", layout="wide")
+st.title("Freie Hallen anzeigen")
 
-st.title("🏟️ Freie Hallen anzeigen")
-
-# UI
+# 📅 UI: Wochentag & Uhrzeit
 wochentag_anzeige = st.selectbox("Wochentag auswählen", [
     "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"
 ])
@@ -20,15 +24,12 @@ wochentag_map = {
 }
 wochentag_sql = wochentag_map[wochentag_anzeige]
 
+# 🧠 Freie Einrichtungen anhand Belegung ermitteln
 def get_freie_einrichtungen(wochentag, uhrzeit):
-    db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Techlabs#2025",
-        database="techlabs_projekt"
-    )
+    db = get_db_connection()
     cursor = db.cursor(dictionary=True)
     zeit_str = uhrzeit.strftime("%H:%M:%S")
+
     query = """
         SELECT e.einrichtung_id
         FROM (
@@ -50,16 +51,13 @@ def get_freie_einrichtungen(wochentag, uhrzeit):
     db.close()
     return [f["einrichtung_id"] for f in freie]
 
+# 📍 Geodaten der freien Einrichtungen laden
 def lade_geodaten(freie_ids):
     if not freie_ids:
         return []
-    db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Techlabs#2025",
-        database="techlabs_projekt"
-    )
+    db = get_db_connection()
     cursor = db.cursor(dictionary=True)
+
     format_strings = ','.join(['%s'] * len(freie_ids))
     query = f"""
         SELECT g.breitengrad, g.laengengrad, a.strasse, a.hausnr, a.plz, a.ort
@@ -73,6 +71,7 @@ def lade_geodaten(freie_ids):
     db.close()
     return daten
 
+# 🗺️ Marker-Karte rendern
 def zeige_karte(daten):
     m = folium.Map(location=[51.9607, 7.6261], zoom_start=12)
     for eintrag in daten:
@@ -85,7 +84,7 @@ def zeige_karte(daten):
     m.save("karte.html")
     components.html(open("karte.html", "r", encoding="utf-8").read(), height=600)
 
-# Aktion
+# 🚀 Button-Aktion
 if st.button("Freie Hallen anzeigen"):
     freie_ids = get_freie_einrichtungen(wochentag_sql, uhrzeit)
     if freie_ids:

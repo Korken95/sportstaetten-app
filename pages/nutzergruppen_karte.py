@@ -1,11 +1,15 @@
 import streamlit as st
 import folium
-import mysql.connector
 from folium import Map, CircleMarker
-import streamlit.components.v1 as components
 from datetime import time, timedelta
+import streamlit.components.v1 as components
+import sys, os
 
-# 📌 Farben pro Nutzergruppe
+# 🔄 Pfad zur zentralen DB-Verbindung aus db.py
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from db import get_db_connection  # zentrale Verbindung
+
+# Farben pro Nutzergruppe
 nutzergruppen_farben = {
     "Schulsport": "blue",
     "Wettkampfsport": "red",
@@ -22,9 +26,9 @@ nutzergruppen_farben = {
     "außersp. Veranstaltungen": "darkgreen"
 }
 
-# 📋 Seiteneinstellungen
+# Seiteneinstellungen
 st.set_page_config(page_title="Nutzergruppen-Karte", layout="wide")
-st.title("🎯 Belegung nach Nutzergruppen – farblich dargestellt")
+st.title("Belegung nach Nutzergruppen – farblich dargestellt")
 
 col1, col2 = st.columns([3, 1])
 
@@ -43,14 +47,9 @@ with col1:
                      value=time(16, 0), step=timedelta(minutes=15))
     zeit_str = zeit.strftime("%H:%M:%S")
 
-# 📦 Belegungsdaten mit Nutzergruppe + Tätigkeit laden
+# 📥 Belegungsdaten mit Nutzergruppe + Tätigkeit
 def lade_belegungen_mit_farbe(wochentag, zeit):
-    db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Techlabs#2025",
-        database="techlabs_projekt"
-    )
+    db = get_db_connection()
     cursor = db.cursor(dictionary=True)
 
     query = """
@@ -101,7 +100,7 @@ def zeige_karte_farbig(daten):
     m.save("nutzergruppen_map.html")
     components.html(open("nutzergruppen_map.html", "r", encoding="utf-8").read(), height=600)
 
-# 🎨 Legende (Glossar)
+# ℹ️ Legende anzeigen
 def zeige_glossar():
     st.markdown("### 🗂️ Legende – Nutzergruppen")
     for gruppe, farbe in nutzergruppen_farben.items():
@@ -112,7 +111,7 @@ def zeige_glossar():
         </div>
         """, unsafe_allow_html=True)
 
-# 🔄 Anzeige auf der Seite
+# 🔄 Daten abrufen & anzeigen
 with col1:
     daten = lade_belegungen_mit_farbe(wochentag_sql, zeit_str)
     if daten:

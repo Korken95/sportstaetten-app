@@ -26,7 +26,7 @@ def lade_verfuegbare_taetigkeiten():
 
 # Seiteneinstellungen
 st.set_page_config(page_title="Tätigkeit suchen", layout="wide")
-st.title("🎯 Sportmöglichkeit nach Tätigkeit finden")
+st.title("Sportmöglichkeit nach Tätigkeit finden")
 
 col1, col2 = st.columns([3, 1])
 
@@ -88,13 +88,13 @@ def zeige_karte(daten):
         popup_text = f"""
         <b>{eintrag['taetigkeit']}</b><br>
         {eintrag['nutzer_gruppen']}<br>
-        🕒 Startzeit: {eintrag['start']}<br>
+         Startzeit: {eintrag['start']}<br>
         {eintrag['strasse']} {eintrag['hausnr']}, {eintrag['ort']}
         """
         Marker(
             location=[eintrag["breitengrad"], eintrag["laengengrad"]],
             popup=popup_text,
-            icon=folium.Icon(color="green")
+            icon=folium.Icon(color="red")
         ).add_to(m)
 
     m.save("taetigkeit_map.html")
@@ -109,5 +109,5 @@ with col1:
         st.info("Keine Hallen für diese Tätigkeit und Zeitspanne gefunden.")
 
 with col2:
-    st.markdown("### ℹ️ Hinweis")
+    st.markdown("### ℹ Hinweis")
     st.write("Die Karte zeigt alle Hallen, in denen **die gewählte Tätigkeit** innerhalb des Zeitbereichs **beginnt**.")
