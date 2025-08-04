@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .env
 karte.html
+tech/
+__pycache__/
+*.pyc
