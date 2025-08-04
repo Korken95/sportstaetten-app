@@ -31,43 +31,43 @@ wochentag_map_belegung = {
 v_tag = wochentag_map_verfugbarkeit[wochentag_anzeige]
 b_tag = wochentag_map_belegung[wochentag_anzeige]
 
-# 🧠 Freie Einrichtungen mit Segmentfilter
 def get_freie_einrichtungen(wochentag_v, wochentag_b, uhrzeit, segmentanzahl):
     db = get_db_connection()
     cursor = db.cursor(dictionary=True)
     zeit_str = uhrzeit.strftime("%H:%M:%S")
 
     query = """
-SELECT 
-    e.id AS einrichtung_id,
-    e.name,
-    e.typ,
-    COUNT(DISTINCT s.id) AS verfuegbare_segmente
-FROM einrichtungen e
-JOIN segmente s ON s.einrichtung_id = e.id
-JOIN verfugbarkeit v ON v.segment_id = s.id
-WHERE v.wochentag = %s
-  AND v.start <= %s
-  AND v.ende > %s
-  AND NOT EXISTS (
-      SELECT 1 FROM belegungsplan b
-      JOIN segmente s2 ON b.segment_id = s2.id
-      WHERE b.segment_id = s.id
-        AND b.wochentag = %s
-        AND b.start <= %s
-        AND b.ende > %s
-        AND s2.name = 'Gesamtspielfläche'
-  )
-GROUP BY e.id
-HAVING COUNT(DISTINCT s.id) = %s;
+        SELECT 
+            e.id AS einrichtung_id,
+            e.name,
+            e.typ,
+            COUNT(DISTINCT s.id) AS verfuegbare_segmente
+        FROM einrichtungen e
+        JOIN segmente s ON s.einrichtung_id = e.id
+        JOIN verfugbarkeit v ON v.segment_id = s.id
+        WHERE v.wochentag = %s
+          AND v.start <= %s
+          AND v.ende > %s
+          AND NOT EXISTS (
+              SELECT 1 FROM belegungsplan b
+              JOIN segmente s2 ON b.segment_id = s2.id
+              WHERE b.segment_id = s.id
+                AND b.wochentag = %s
+                AND b.start <= %s
+                AND b.ende > %s
+                AND s2.name = 'Gesamtspielfläche'
+          )
+        GROUP BY e.id
+        HAVING COUNT(DISTINCT s.id) = %s
     """
     params = (wochentag_v, zeit_str, zeit_str, wochentag_b, zeit_str, zeit_str, segmentanzahl)
-    print("DEBUG PARAMS:", params)  # ✅ Debug-Ausgabe
+    print("DEBUG PARAMS:", params)
     cursor.execute(query, params)
     freie = cursor.fetchall()
     cursor.close()
     db.close()
     return freie
+
 
 # 📍 Geodaten & Adressinfos laden
 def lade_geodaten_infos(einrichtung_ids):
